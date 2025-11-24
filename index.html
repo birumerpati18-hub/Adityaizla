@@ -1,0 +1,253 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Aditya Izlan Phasya — Portofolio</title>
+  <meta name="description" content="Portofolio resmi Aditya Izlan Phasya: profil, pendidikan, keahlian, pengalaman, proyek, galeri, dan sertifikat." />
+
+  <style>
+    /* ====== Variabel ====== */
+    :root{
+      --bg: #0b0f14;
+      --surface: #111826;
+      --text: #e6edf7;
+      --muted: #9fb0c3;
+      --brand: #4f8cff;
+      --brand-2: #22d3ee;
+      --ok: #22c55e;
+      --radius: 16px;
+      --shadow: 0 10px 30px rgba(0,0,0,.35);
+      --maxw: 1200px;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;font-family:system-ui,sans-serif;background:var(--bg);color:var(--text);line-height:1.6}
+    a{color:var(--brand);text-decoration:none}
+    img{max-width:100%;display:block;border-radius:12px}
+    .container{max-width:var(--maxw);margin:auto;padding:0 20px}
+    h2{margin:0 0 20px}
+    .btn{display:inline-block;padding:10px 16px;border-radius:999px;background:linear-gradient(90deg,var(--brand),var(--brand-2));color:#fff;font-weight:600;box-shadow:var(--shadow);cursor:pointer}
+
+    /* ====== Header ====== */
+    header{position:sticky;top:0;z-index:50;background:rgba(11,15,20,.85);backdrop-filter:blur(10px);padding:10px 0;border-bottom:1px solid #1d2636}
+    nav ul{display:flex;gap:16px;list-style:none;margin:0;padding:0}
+    nav a{color:var(--muted)}
+    .brand{font-weight:700}
+
+    /* ====== Section ====== */
+    section{padding:50px 0;border-top:1px solid #1b2436}
+    .card{background:var(--surface);border:1px solid #1c2a44;border-radius:var(--radius);padding:18px;box-shadow:var(--shadow)}
+
+    /* ====== Hero ====== */
+    .hero{padding:60px 0;display:grid;grid-template-columns:1.1fr .9fr;gap:20px;align-items:center}
+    .hero img{box-shadow:var(--shadow)}
+
+    /* ====== Skills ====== */
+    .skills{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px}
+    .chip{display:flex;align-items:center;gap:8px;padding:10px 12px;border:1px solid #25324a;border-radius:999px;background:#0f1626;color:var(--text);font-weight:600;cursor:pointer}
+    .dot{width:10px;height:10px;border-radius:50%;background:var(--ok)}
+
+    /* ====== Gallery & Sertifikat ====== */
+    .gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px}
+    .gallery img{cursor:pointer;transition:.3s}
+    .gallery img:hover{transform:scale(1.05)}
+
+    /* ====== Footer ====== */
+    footer{padding:30px 0;color:var(--muted);text-align:center}
+
+    /* ====== Scroll to top ====== */
+    #scrollTopBtn {
+      position: fixed; bottom: 20px; right: 20px;
+      padding: 12px 16px; font-size: 18px;
+      border-radius: 50%; background: var(--brand); color: #fff;
+      box-shadow: var(--shadow); display:none; z-index:1000; cursor:pointer;
+    }
+
+    /* ====== Light Mode ====== */
+    body.light{background:#f5f7fa;color:#111}
+    body.light header{background:rgba(255,255,255,.9);border-bottom:1px solid #ddd}
+    body.light .card{background:#fff;color:#111}
+    body.light nav a{color:#444}
+    body.light .chip{background:#f1f5f9;color:#111;border:1px solid #ccc}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container" style="display:flex;justify-content:space-between;align-items:center">
+      <div class="brand">Aditya Izlan Phasya</div>
+      <nav>
+        <ul>
+          <li><a href="#tentang">Tentang</a></li>
+          <li><a href="#pendidikan">Pendidikan</a></li>
+          <li><a href="#keahlian">Keahlian</a></li>
+          <li><a href="#pengalaman">Pengalaman</a></li>
+          <li><a href="#galeri">Galeri</a></li>
+          <li><a href="#sertifikat">Sertifikat</a></li>
+          <li><a href="#kontak">Kontak</a></li>
+        </ul>
+      </nav>
+      <button id="themeToggle" class="btn outline">🌙 Mode</button>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- HERO -->
+    <section class="hero">
+      <div>
+        <h1>Junior Network Engineer · Content Creator · Student Leader</h1>
+        <p>Saya Aditya Izlan Phasya, siswa SMKN 3 Balikpapan jurusan Teknik Jaringan yang aktif dalam organisasi & kepemudaan.</p>
+        <a class="btn" href="#kontak">Hubungi Saya</a>
+      </div>
+      <div>
+        <img src="WhatsApp Image 2025-09-01 at 19.14.24.jpeg" alt="Foto Aditya Izlan Phasya">
+      </div>
+    </section>
+
+    <!-- TENTANG -->
+    <section id="tentang">
+      <h2>Tentang</h2>
+      <div class="card">
+        <p>Aditya Izlan Phasya, pelajar SMK dengan semangat belajar tanpa batas. Aktif di organisasi, kreatif di karya, dan terus berkembang di bidang teknologi, kepemimpinan, serta komunikasi, dengan berpegang teguh pada prinsip inovatif, adaptif, dan kolaboratif.”.</p>
+      </div>
+    </section>
+
+    <!-- PENDIDIKAN -->
+    <section id="pendidikan">
+      <h2>Pendidikan</h2>
+      <div class="card">
+        <ul>
+          <li>SDN 002 Balikpapan Selatan (2014–2020)</li>
+          <li>SMPN 5 Balikpapan (2020–2023)</li>
+          <li>SMKN 3 Balikpapan — Teknik Jaringan (2023–Sekarang)</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- KEAHLIAN -->
+   <section id="keahlian">
+  <h2>Keahlian</h2>
+  <div class="skills">
+    <div>
+      <div class="chip" data-desc="Mampu memimpin tim dengan baik."><span class="dot"></span> Leadership Tim</div>
+      <div class="skill-bar"><div class="skill-fill" style="width:100%"></div></div>
+    </div>
+    <div>
+      <div class="chip" data-desc="Terampil berbicara di depan umum."><span class="dot"></span> Komunikasi Publik</div>
+      <div class="skill-bar"><div class="skill-fill" style="width:90%"></div></div>
+    </div>
+    <div>
+      <div class="chip" data-desc="Ahli dalam negosiasi win-win."><span class="dot"></span> Negosiasi</div>
+      <div class="skill-bar"><div class="skill-fill" style="width:90%"></div></div>
+    </div>
+    <div>
+      <div class="chip" data-desc="Berpengalaman menyusun & mengelola acara."><span class="dot"></span> Organisasi Acara</div>
+      <div class="skill-bar"><div class="skill-fill" style="width:90%"></div></div>
+    </div>
+    <div>
+      <div class="chip" data-desc="Menganalisis masalah & memberi solusi."><span class="dot"></span> Analisis Masalah</div>
+      <div class="skill-bar"><div class="skill-fill" style="width:90%"></div></div>
+    </div>
+    <div>
+      <div class="chip" data-desc="Berpengalaman menulis puisi."><span class="dot"></span> Membuat Puisi</div>
+      <div class="skill-bar"><div class="skill-fill" style="width:100%"></div></div>
+    </div>
+    <div>
+      <div class="chip" data-desc="Menguasai dasar psikologi."><span class="dot"></span> Psikologi Dasar</div>
+      <div class="skill-bar"><div class="skill-fill" style="width:88%"></div></div>
+    </div>
+    <div>
+      <div class="chip" data-desc="Mengenal instalasi jaringan dasar."><span class="dot"></span> Instalasi Jaringan</div>
+      <div class="skill-bar"><div class="skill-fill" style="width:85%"></div></div>
+    </div>
+    <div>
+      <div class="chip" data-desc="Mengerti coding dasar (HTML, CSS, JS)."><span class="dot"></span> Coding Dasar</div>
+      <div class="skill-bar"><div class="skill-fill" style="width:85%"></div></div>
+    </div>
+  </div>
+</section>
+
+    <!-- PENGALAMAN -->
+    <section id="pengalaman">
+      <h2>Pengalaman</h2>
+      <div class="card">
+        <ul>
+          <li>Wakil Ketua OSIS — SMKN 3 Balikpapan 2024/2025</li>
+          <li>Wakil Ketua PIK-R Aktif SKAGA 2024/2025</li>
+          <li>Kader Perlindungan Perempuan dan Anak Balikpapan 2024/2025</li>
+          <li>Ketua Panitia Event Volly Skaga Cup Kalimantan Timur 2025</li>
+          <li>Ketua Band SMK Negeri 3 Balikpapan 2025</li>
+          <li>Ketua Duta Sekolah Putra Putri SMK Negeri 3 2023/2024</li>
+          <li>Tim Humas SMK Negeri 3 Balikpapan 2023/2024</li>
+          <li>PKL — PT Kilang Pertamina Internasional 2024</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- GALERI -->
+    <section id="galeri">
+      <h2>Galeri Foto</h2>
+      <div class="gallery">
+        <img src="WhatsApp Image 2025-09-01 at 19.14.17.jpeg" alt="Event 1">
+        <img src="WhatsApp Image 2025-08-28 at 07.20.48.jpeg" alt="Event 2">
+        <img src="foto pertamina.jpeg" alt="Event 3">
+        
+      </div>
+    </section>
+
+    <!-- SERTIFIKAT -->
+    <section id="sertifikat">
+      <h2>Sertifikat</h2>
+      <div class="gallery">
+        <img src="foto serti diapinsat.jpeg" alt="Sertifikat 1">
+        <img src="serti pusga.jpeg" alt="Sertifikat 2">
+        <img src="foto serti perlindungan anaak.jpeg" alt="Sertifikat 3">
+        <img src="serti dpc.jpeg" alt="Sertifikat 4">
+      </div>
+    </section>
+
+    <!-- KONTAK -->
+    <section id="kontak">
+      <h2>Kontak</h2>
+      <div class="card">
+        <p>Email: <a href="mailto:aditya1999.phasya@gmail.com">aditya1999.phasya@gmail.com</a></p>
+        <p>Instagram: <a href="https://instagram.com/adityaIzlan" target="_blank">@adityaIzlan</a></p>
+        <p>WA: <a href="https://wa.me/6285845753764" target="_blank">0858-4575-3764</a></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="container">
+    © <span id="year"></span> Aditya Izlan Phasya
+  </footer>
+
+  <!-- Scroll to top -->
+  <button id="scrollTopBtn">⬆️</button>
+
+  <script>
+    
+    // Tahun otomatis
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Dark / Light Mode
+    const themeBtn = document.getElementById('themeToggle');
+    themeBtn.addEventListener('click', ()=>{
+      document.body.classList.toggle('light');
+      themeBtn.textContent = document.body.classList.contains('light') ? "🌙 Dark Mode" : "☀️ Light Mode";
+    });
+
+    // Scroll to top
+    const scrollBtn = document.getElementById('scrollTopBtn');
+    window.addEventListener('scroll', ()=>{
+      scrollBtn.style.display = window.scrollY > 200 ? "block" : "none";
+    });
+    scrollBtn.addEventListener('click', ()=>window.scrollTo({top:0,behavior:"smooth"}));
+
+    // Klik keahlian → tampilkan penjelasan
+    document.querySelectorAll(".chip").forEach(chip=>{
+      chip.addEventListener("click", ()=>{
+        alert(chip.dataset.desc);
+      });
+    });
+  </script>
+</body>
+</html>
